@@ -2,7 +2,7 @@ import sys
 
 def longest_alternating_increasing(A, B):
     items = [('A', i, v) for i, v in enumerate(A)] + [('B', j, v) for j, v in enumerate(B)]
-    items.sort(key=lambda t: t[1])  # sort by index
+    items.sort(key=lambda t: t[1])  
 
     n = len(items)
     dp, prev = [1]*n, [-1]*n
